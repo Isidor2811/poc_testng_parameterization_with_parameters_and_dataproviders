@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="DataProvideSuite" parallel="false">
+    <test name="Regression with Data Provider">
+        <classes>
+            <class name="com.testng.parameterEx.DataDrivenExample"/>
+        </classes>
+    </test>
+</suite>
+
+

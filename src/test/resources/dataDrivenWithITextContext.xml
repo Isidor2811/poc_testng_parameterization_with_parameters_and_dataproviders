@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="DataProvideSuite" parallel="false">
+    <test name="Regression part #1">
+        <classes>
+            <class name="com.testng.parameterEx.DataDrivenExample">
+                <methods>
+                    <include name="sumOfTwoWithITestContext"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="Regression part #2">
+        <classes>
+            <class name="com.testng.parameterEx.DataDrivenExample">
+                <methods>
+                    <include name="diffOfTwoWithITestContext"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+</suite>

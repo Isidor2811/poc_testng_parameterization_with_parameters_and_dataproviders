@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" parallel="false">
+    <test name="Regression">
+        <classes>
+            <class name="com.testng.parameterEx.ParametersExample">
+                <parameter name="userName" value="Admin"/>
+                <parameter name="password" value="SuperPassword"/>
+                <methods>
+                    <include name="invalidLogin">
+                        <parameter name="userName" value="Admi111111111n"/>
+                        <parameter name="password" value="Admin1333333323"/>
+                    </include>
+                    <include name="validLogin"/>
+                    <include name="loginAndGoToSomePage"/>
+                    <include name="loginAndGoToBuyProduct"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
+
+
