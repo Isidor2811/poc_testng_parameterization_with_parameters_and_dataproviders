@@ -28,6 +28,18 @@ public class ParametersExample {
     public void loginAndGoToBuyProduct(String userName, String password) {
         System.out.println(userName + " " + password);
     }
+    
+     @Test
+    @Parameters(value = {"userName", "password"})
+    public void validLogin(String userName, String password) {
+        System.out.println(userName + " " + password);
+    }
+    
+     @Test
+    @Parameters(value = {"userName", "password"})
+    public void validLogin(String userName, String password) {
+        System.out.println(userName + " " + password);
+    }
 }
 
 
